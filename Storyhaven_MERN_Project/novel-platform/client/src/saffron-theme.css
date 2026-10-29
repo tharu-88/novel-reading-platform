@@ -1,0 +1,276 @@
+:root {
+    color-scheme: dark;
+    color: #f4f0e6;
+    background: #11110e;
+    --ink: #f4f0e6;
+    --black: #11110e;
+    --surface: #191813;
+    --surface-raised: #211f18;
+    --line: #39352a;
+    --saffron: #f2b705;
+    --saffron-bright: #ffd04a;
+    --muted: #b7ad98;
+    --danger: #ff8676
+}
+
+body {
+    background: var(--black);
+    color: var(--ink)
+}
+
+header {
+    background: var(--black);
+    border-bottom-color: var(--line)
+}
+
+.brand small,
+nav button {
+    color: var(--muted)
+}
+
+.brand-mark,
+.eyebrow {
+    color: var(--saffron)
+}
+
+nav button.active {
+    color: var(--saffron-bright)
+}
+
+nav button.active:after {
+    background: var(--saffron)
+}
+
+.avatar {
+    background: #3a3019;
+    color: var(--saffron-bright)
+}
+
+.hero {
+    background: var(--saffron);
+    color: #17140b;
+    border: 1px solid var(--saffron-bright)
+}
+
+.hero .eyebrow,
+.hero h1,
+.hero h1 em,
+.hero p {
+    color: #17140b
+}
+
+.hero-book {
+    background: #17150f;
+    color: var(--saffron-bright);
+    border-color: #d19a00
+}
+
+.orbit {
+    border-color: #b98700
+}
+
+.spark {
+    color: #775400
+}
+
+h1,
+h2,
+h3 {
+    color: var(--ink)
+}
+
+.hero p,
+.page-heading p,
+.section-heading p,
+.profile-head p {
+    color: var(--muted)
+}
+
+.primary,
+.outline,
+.reader-controls button,
+.engage button,
+.chapter-end button {
+    border-color: var(--saffron);
+    color: #17140b;
+    background: var(--saffron)
+}
+
+.primary:hover {
+    background: var(--saffron-bright);
+    border-color: var(--saffron-bright)
+}
+
+.outline,
+.reader-controls button,
+.engage button,
+.chapter-end button {
+    background: transparent;
+    color: var(--saffron-bright)
+}
+
+.text-button,
+.title-link,
+.author {
+    color: var(--saffron-bright)
+}
+
+.chips button {
+    border-color: var(--line);
+    color: var(--muted)
+}
+
+.chips button.selected {
+    background: var(--saffron);
+    border-color: var(--saffron);
+    color: #17140b
+}
+
+.cover {
+    background: #1b1913
+}
+
+.book-grid .book-card:nth-child(5n+1) .cover-art {
+    background: linear-gradient(145deg, #a34a59, #4c2633);
+    border-color: #e68b90;
+    color: #fff0d6
+}
+
+.book-grid .book-card:nth-child(5n+2) .cover-art {
+    background: linear-gradient(145deg, #287d75, #173c48);
+    border-color: #78bba8;
+    color: #fbf2df
+}
+
+.book-grid .book-card:nth-child(5n+3) .cover-art {
+    background: linear-gradient(145deg, #5576b8, #263b67);
+    border-color: #92a9e3;
+    color: #fff2dc
+}
+
+.book-grid .book-card:nth-child(5n+4) .cover-art {
+    background: linear-gradient(145deg, #64824c, #293d30);
+    border-color: #b3c58a;
+    color: #fff1d2
+}
+
+.book-grid .book-card:nth-child(5n) .cover-art {
+    background: linear-gradient(145deg, #c17b2c, #654119);
+    border-color: #e7b458;
+    color: #fff0d1
+}
+
+input,
+textarea,
+select {
+    background: var(--surface);
+    border-color: var(--line);
+    color: var(--ink)
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #8e8778
+}
+
+label small,
+.muted,
+.author {
+    color: var(--muted)
+}
+
+.empty,
+.panel,
+.reading-area,
+.modal {
+    background: var(--surface);
+    border-color: var(--line);
+    color: var(--ink)
+}
+
+.work p {
+    color: var(--muted)
+}
+
+.danger {
+    color: var(--danger)
+}
+
+.chapter-content {
+    color: #eee9dd
+}
+
+.chapter-end {
+    color: var(--saffron)
+}
+
+.modal-wrap {
+    background: #000c
+}
+
+.modal p,
+.close {
+    color: var(--muted)
+}
+
+.alert {
+    background: #233526;
+    color: #c5e1bd
+}
+
+.alert.error {
+    background: #3a211d;
+    color: #ffc0b2
+}
+
+.alert button {
+    color: inherit
+}
+
+footer {
+    border-top-color: var(--line);
+    color: var(--muted)
+}
+
+.icon-button.danger:hover {
+    background: #40231f;
+    border-color: #794039;
+    color: var(--danger)
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--saffron);
+    outline-offset: 2px
+}
+
+.hero p {
+    color: #17140b
+}
+
+.hero .primary {
+    background: transparent;
+    border: 2px solid #17140b;
+    color: #17140b;
+    padding: 11px 18px
+}
+
+.hero .primary:hover {
+    background: #17140b;
+    border-color: #17140b;
+    color: var(--saffron-bright)
+}
+
+@media(min-width:901px) {
+    header {
+        gap: clamp(24px, 3vw, 55px)
+    }
+
+    nav {
+        flex: 1;
+        justify-content: space-evenly;
+        gap: clamp(30px, 5vw, 88px)
+    }
+}

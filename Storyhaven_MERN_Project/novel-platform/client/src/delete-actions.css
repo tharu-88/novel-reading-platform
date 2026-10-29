@@ -1,0 +1,30 @@
+.icon-button {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: #80573d;
+    vertical-align: middle
+}
+
+.icon-button:hover {
+    background: #f4e5e1;
+    border-color: #e8c9c4;
+    color: #a2524c
+}
+
+.icon-button:focus-visible {
+    outline: 2px solid #80573d;
+    outline-offset: 2px
+}
+
+.icon-button svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2
+}
